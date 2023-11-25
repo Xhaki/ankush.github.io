@@ -301,7 +301,7 @@ main {
         grid-template-columns: 1fr 1fr 1fr; 
         row-gap: 40px; /* Adjust vertical gap */
         column-gap: 18px; /* Adjust horizontal gap */
-        margin-left: 400px; 
+        margin-left: auto; 
     }
 }
 
