@@ -284,12 +284,15 @@ main {
 
 @media screen and (max-width: 768px) {
     .container {
+        max-width: 90%;
         padding: 0 10px; 
     }
 
     .cards-container {
         grid-template-columns: 1fr; 
     }
+    .card {
+        min-height: auto;}
 }
 
 /* For larger screens */
@@ -301,3 +304,5 @@ main {
         margin-left: 400px; 
     }
 }
+
+
