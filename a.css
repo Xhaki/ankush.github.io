@@ -140,12 +140,7 @@ main {
     grid-gap: 20px; 
 
     
-    @media screen and (min-width: 1200px) {
-        grid-template-columns: 1fr 1fr 1fr; 
-        row-gap: 40px; 
-        column-gap: 18px; 
-        margin-left: 400px; 
-    }
+    
 }
 
 
@@ -284,25 +279,25 @@ main {
     font-weight: bold;
 }
 
-/* For smaller screens */
+
+
+
 @media screen and (max-width: 768px) {
-    /* Adjustments for smaller screens */
     .container {
-        padding: 0 10px; /* Adjust padding for smaller screens */
+        padding: 0 10px; 
     }
 
     .cards-container {
-        grid-template-columns: 1fr; /* Display cards in a single column on smaller screens */
+        grid-template-columns: 1fr; 
     }
 }
 
 /* For larger screens */
 @media screen and (min-width: 1200px) {
-    /* Adjustments for larger screens */
     .cards-container {
-        grid-template-columns: 1fr 1fr 1fr; /* Display three cards in a row */
+        grid-template-columns: 1fr 1fr 1fr; 
         row-gap: 40px; /* Adjust vertical gap */
         column-gap: 18px; /* Adjust horizontal gap */
-        margin-left: 400px; /* Maintain the margin you've set for larger screens */
+        margin-left: 400px; 
     }
 }
