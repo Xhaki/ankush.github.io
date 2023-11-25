@@ -38,10 +38,13 @@ ul {
     
 }
 
-.container {
-    max-width: 1180px;
-    margin-inline: auto;
-    overflow: hidden;
+
+    .container {
+        max-width: 100%; 
+        padding: 0 20px; 
+    
+   
+    
 }
 
 nav {
@@ -132,21 +135,17 @@ main {
 }
 
 .cards-container {
-  
-    
-   
-    
     display: grid;
-    grid-template-columns: 1fr 1fr  1fr;
-   
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-gap: 20px; 
+
     
-    
-    row-gap: 40px;
-    column-gap: 18px;
-    
-    margin-left: 400px;
-    
-     
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr; 
+        row-gap: 40px; 
+        column-gap: 18px; 
+        margin-left: 400px; 
+    }
 }
 
 
@@ -286,31 +285,24 @@ main {
 }
 
 /* For smaller screens */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     /* Adjustments for smaller screens */
     .container {
-        padding: 0 20px; /* Adjust container padding for smaller screens */
-        max-width: 100%; /* Ensure the content fits within the screen width */
-    }
-
-    /* Modify other elements as needed */
-    nav {
-        /* Adjust the navigation for smaller screens */
-    }
-
-    main {
-        padding-top: 50px; /* Adjust main content padding for smaller screens */
-        margin-top: 60px; /* Adjust the margin-top value */
+        padding: 0 10px; /* Adjust padding for smaller screens */
     }
 
     .cards-container {
-        /* Adjust grid for smaller screens */
         grid-template-columns: 1fr; /* Display cards in a single column on smaller screens */
-        margin-left: 0; /* Remove left margin for cards on smaller screens */
     }
+}
 
-    .card {
-        width: 100%; /* Cards occupy full width on smaller screens */
-        margin-bottom: 20px; /* Add some space between cards on smaller screens */
+/* For larger screens */
+@media screen and (min-width: 1200px) {
+    /* Adjustments for larger screens */
+    .cards-container {
+        grid-template-columns: 1fr 1fr 1fr; /* Display three cards in a row */
+        row-gap: 40px; /* Adjust vertical gap */
+        column-gap: 18px; /* Adjust horizontal gap */
+        margin-left: 400px; /* Maintain the margin you've set for larger screens */
     }
 }
