@@ -285,3 +285,32 @@ main {
     font-weight: bold;
 }
 
+/* For smaller screens */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .container {
+        padding: 0 20px; /* Adjust container padding for smaller screens */
+        max-width: 100%; /* Ensure the content fits within the screen width */
+    }
+
+    /* Modify other elements as needed */
+    nav {
+        /* Adjust the navigation for smaller screens */
+    }
+
+    main {
+        padding-top: 50px; /* Adjust main content padding for smaller screens */
+        margin-top: 60px; /* Adjust the margin-top value */
+    }
+
+    .cards-container {
+        /* Adjust grid for smaller screens */
+        grid-template-columns: 1fr; /* Display cards in a single column on smaller screens */
+        margin-left: 0; /* Remove left margin for cards on smaller screens */
+    }
+
+    .card {
+        width: 100%; /* Cards occupy full width on smaller screens */
+        margin-bottom: 20px; /* Add some space between cards on smaller screens */
+    }
+}
