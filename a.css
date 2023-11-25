@@ -302,9 +302,9 @@ main {
         grid-template-columns: 1fr 1fr 1fr  ; 
         row-gap: 40px; /* Adjust vertical gap */
         column-gap: 18px; /* Adjust horizontal gap */
-        max-width: 1200px; /* Adjust the maximum width for the content */
+        /* Adjust the maximum width for the content */
         margin-left: auto;
-        margin-right: auto; /* Center the content by adding margins */
+       /* Center the content by adding margins */
     }
     }
 
