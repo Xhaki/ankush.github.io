@@ -304,6 +304,7 @@ main {
         column-gap: 18px; /* Adjust horizontal gap */
         /* Adjust the maximum width for the content */
         margin-left: auto;
+        max-width:1200px;
        /* Center the content by adding margins */
     }
     }
