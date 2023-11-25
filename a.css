@@ -299,11 +299,11 @@ main {
 /* For larger screens */
 @media screen and (min-width: 1200px) {
     .cards-container {
-        grid-template-columns: 1fr 1fr 1fr  1fr; 
+        grid-template-columns: 1fr 1fr 1fr  ; 
         row-gap: 40px; /* Adjust vertical gap */
         column-gap: 18px; /* Adjust horizontal gap */
         /* Adjust the maximum width for the content */
-        margin-left: auto;
+        margin-left: 400px;
         max-width:1200px;
        /* Center the content by adding margins */
     }
