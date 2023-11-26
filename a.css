@@ -302,13 +302,84 @@ body {
             
             margin-left: 0;
             margin-right: 0;}
+            /* For mobile devices (max-width: 768px) */
+ 
+
+
+    /* Show menu-toggle button and full-width navigation links */
+    .nav-links {
+        width: 100%;
+    }
+
+    .nav-links ul {
+        display: none;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .nav-links ul.active {
+        display: flex;
+    }
+
+
+        #menu-toggle {
+            position: absolute;
+            top: 6px;
+            right: 5px;
+            font-size: 15px;
+            padding-left:2px;
+            padding-right:px ;
+            padding-top: 6px;
+            padding-bottom: 6px;
+           border-radius: 3px;
+           color: white;
+           background-color: black;
+           border-color: white;
+           
+           
+           
+    }
+    #menu-toggle:active{
+        opacity: 0;
+    }
+    
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+ /* Move the company logo to the start */
+.your-account p{
+    display:none;
+}
+.company-logo-img{
+    margin-left: -20px;
+  
+}
+
+.search-bar {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-left: -30px; /* Adjust margin between logo and search bar */
+}
+
+.search-bar input {
+    width: 100px; /* Adjust width of the input */
+    /* Other styles for the input */
+}
+
+}
+
             
         
        
      
         
        
-}
+
 
 /* For larger screens */
 @media screen and (min-width: 1200px) {
