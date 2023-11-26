@@ -324,23 +324,27 @@ body {
 
         #menu-toggle {
             position: absolute;
-            top: 6px;
-            right: 5px;
+            top: 5px;
+            right: 10px;
             font-size: 15px;
-            padding-left:2px;
-            padding-right:px ;
-            padding-top: 6px;
-            padding-bottom: 6px;
-           border-radius: 3px;
+            padding-left:5px;
+            padding-right:5px ;
+            padding-top: 7px;
+            padding-bottom: 7px;
+           border-radius: 5px;
            color: white;
            background-color: black;
            border-color: white;
+           margin-left: 1px;
            
            
            
     }
     #menu-toggle:active{
         opacity: 0;
+    }
+    .logo{
+        font:15px;
     }
     
 
@@ -356,23 +360,29 @@ body {
     display:none;
 }
 .company-logo-img{
-    margin-left: -20px;
-    opacity:0;
+    margin-left: -100px;
+    opacity: 0;
   
 }
 
 .search-bar {
     display: flex;
     align-items: center; /* Align items vertically */
-    margin-left: -30px; /* Adjust margin between logo and search bar */
+    margin-right:0;
+    margin-left: -35px; /* Adjust margin between logo and search bar */
 }
 
 .search-bar input {
     width: 100px; /* Adjust width of the input */
     /* Other styles for the input */
 }
-
-}
+.search-button{
+    width: 80px;
+    margin-right: 18px;
+    
+    padding: 8px 0px;
+    
+}}
 
             
         
@@ -417,9 +427,3 @@ body {
         display: block; /* Show the button on smaller screens */
     }
 }
-
-    
-   
-
-
-
