@@ -298,6 +298,14 @@ body {
    
     .card {
         min-height: auto;}
+    .main-nav {
+            
+            margin-left: 0;
+            margin-right: 0;}
+            
+        
+       
+     
         
        
 }
@@ -323,6 +331,21 @@ body {
 
     }
     
+#menu-toggle {
+    display: none; 
+}
+
+/* Styles for mobile view (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .nav-links ul {
+        display: none; /* Hide the list by default on smaller screens */
+    }
+
+    #menu-toggle {
+        display: block; /* Show the button on smaller screens */
+    }
+}
+
     
    
 
