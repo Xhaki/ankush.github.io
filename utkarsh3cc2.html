@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="s.css">
+  <style>
+    .video-container {
+      position: relative;
+    }
+    
+    .video {
+      position: absolute;
+      top: 0;
+      width: 1190px; /* Adjusted width to match the image */
+      height: auto; /* Auto height to maintain aspect ratio */
+      margin-top: 900px; /* Adjusted margin to align with image */
+      margin-left: -2px; /*
+       Adjusted margin to align with image */
+       
+    }
+
+    /* Hide the controls */
+    .video::-webkit-media-controls {
+      display: none;
+    }
+    .video::-webkit-media-controls-enclosure {
+      display: none !important;
+    }
+    .video::-webkit-media-controls-panel {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <img src="1.jpeg" class="a">
+
+    <img src="utkarsh3cc2.png" class="b">
+    <video class="video" autoplay muted loop>
+      <source src="w1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+  <p id="date"></p>
+  <p id="time"></p>
+  <p id="randomNumber"></p>
+  </div>
+  <script>
+   // Get current date
+const currentDate = new Date();
+
+// Mapping of full month names to three-letter abbreviations
+const monthAbbreviations = {
+  'January': 'Jan',
+  'February': 'Feb',
+  'March': 'Mar',
+  'April': 'Apr',
+  'May': 'May',
+  'June': 'Jun',
+  'July': 'Jul',
+  'August': 'Aug',
+  'September': 'Sep',
+  'October': 'Oct',
+  'November': 'Nov',
+  'December': 'Dec'
+};
+
+// Extract month abbreviation, date, and year
+const monthName = currentDate.toLocaleString('default', { month: 'long' });
+const monthAbbreviation = monthAbbreviations[monthName];
+const date = currentDate.getDate();
+const year = currentDate.getFullYear();
+let hours = currentDate.getHours();
+    const minutes = currentDate.getMinutes();
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // Handle midnight (0 hours)
+
+    // Pad minutes with leading zero if needed
+    const paddedMinutes = minutes < 10 ? '0' + minutes : minutes;
+
+// Display the date with the month abbreviation
+const dateElement = document.getElementById('date');
+dateElement.innerHTML = ` ${monthAbbreviation} ${date}, ${year}`;
+const timeElement = document.getElementById('time');
+    timeElement.innerHTML = `${hours}:${paddedMinutes} ${ampm}`;
+    const randomNumber = Math.floor(100000 + Math.random() * 900000);
+
+// Display the random number
+const randomNumberElement = document.getElementById('randomNumber');
+randomNumberElement.innerHTML = `${randomNumber}`;
+
+  </script>
+</body>
+</html>
