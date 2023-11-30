@@ -7,11 +7,9 @@
   margin-left: -10px;
   margin-top: -10px;
 }
-.body{
-    left:0;
-}
+
 .b{
-    width: 1180px;
+    width: 1185px;
     height: auto;
 }
 #date{
@@ -39,4 +37,7 @@
    
     font-weight: 580;
     opacity: 0.8;
+}
+.video{
+
 }
